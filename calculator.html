@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        table{
+            margin:0 auto;
+            background-color: orange;
+        }
+        .cot{
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+<form action="">
+    <table border='1' cellpadding="0" cellspacing="30px">
+        <tr>
+            <td class="cot">Number 1</td>
+            <td class="cot">
+                <input type="text" value="" id="a">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cot">
+                <input type="button" value="+" id="cong" onclick="display.value = '+'">
+                <input type="button" value="-" id="tru" onclick="display.value = '-'">
+                <input type="button" value="*" id="nhan" onclick="display.value = '*'">
+                <input type="button" value="/" id="chia" onclick="display.value = '/'">
+            </td>
+            <td class="cot">
+                <input type="text" name="display" disabled>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cot">Number 2</td>
+            <td class="cot">
+                <input type="text" value="" id="b">
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td class="cot">Ket Qua</td>
+            <td class="cot">
+                <input type="text" value="" id="ketqua">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cot" id="giua">
+                <input type="button" value="Submit" onclick="tinh()">
+                <input type="reset" value="Reset" >
+            </td>
+        </tr>
+
+    </table>
+</form>
+<script src="calculator.js"></script>
+</body>
+</html>
